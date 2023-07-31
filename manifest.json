@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "No LLM in MDN",
+  "version": "1.0",
+
+  "description": "Removes all LLM references in MDN",
+
+  "icons": {
+    "48": "border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["no-llm.js"]
+    }
+  ]
+}
